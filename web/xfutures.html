@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  </head>
+
+  <body>
+<!--    <element name="x-futures" constructor="FuturesComponent" extends="div"> -->
+    <element name="x-futures" constructor="FuturesComponent">
+      <template>
+        <button on-click="buttonClicked()">Click</button>
+        <template repeat="futureresult in appObject.futureResults">
+          <li>{{futureresult}}</li>
+        </template>
+      </template>
+      <script type="application/dart" src="xfutures.dart"></script>
+    </element>
+  </body>
+</html>
+
