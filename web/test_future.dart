@@ -29,7 +29,6 @@ class FuturesApp {
     jobList.add(_store.addFutureResult('res 1', 1));
     jobList.add(_store.addFutureResult('res 3', 3));
     jobList.add(_store.addFutureResult('res 4', 4));
-    jobList.add(_store.addFutureResult('res 5', 5));
 
     Future.wait(jobList).then((List values) {
       values.forEach((value) => print(value));
