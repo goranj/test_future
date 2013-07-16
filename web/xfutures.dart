@@ -5,7 +5,8 @@ import 'test_future.dart';
 class FuturesComponent extends WebComponent {
 
   void buttonClicked() {
-    appObject.buttonClicked();
+//    appObject.buttonClicked();
+    appObject.loadData();
     print('xfutures click');
   }
 }

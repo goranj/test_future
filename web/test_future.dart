@@ -36,4 +36,12 @@ class FuturesApp {
     });
     print('appObject click');
   }
+
+  void loadData() {
+    _store.loadData(4).then((value) {
+      print(value);
+      watchers.dispatch();
+    });
+    print('appObject loadData');
+  }
 }
