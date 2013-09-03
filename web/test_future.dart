@@ -1,6 +1,5 @@
 library test_future;
 
-import 'dart:html';
 import 'package:web_ui/web_ui.dart';
 import 'package:web_ui/watcher.dart' as watchers;
 import 'dart:async';
@@ -9,6 +8,10 @@ part 'futureresult.dart';
 part 'futures_store.dart';
 
 FuturesApp appObject = new FuturesApp();
+
+//
+// TODO: check out quiver http://pub.dartlang.org/packages/quiver
+//
 
 void main() {
   // Enable this to use Shadow DOM in the browser.
